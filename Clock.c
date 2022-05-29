@@ -12,7 +12,8 @@ void main()
 {
     int h,m,s;
     int p=1000;
-    printf("Enter the present time in HH:MM:SS format: \n");
+    system("cls");
+    printf("Enter the present time in HH MM SS format: \n");
     scanf("%d%d%d", &h,&m,&s);
     
     Start:
@@ -26,7 +27,8 @@ void main()
         s++;
         
     system("cls");
-    printf("%02d:%02d:%02d",h,m,s);
+    printf("The time is: \n");
+    printf("\t%02d:%02d:%02d",h,m,s);
     Sleep(p); //This makes the clock slow down
         
     goto Start; //Infinite loop
